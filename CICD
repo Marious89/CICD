@@ -1,0 +1,104 @@
+AUTHOR :MARIOUS SCHILLINGS
+DATE:21/03/2023
+Understanding CI/CD
+CI/CD, in layman’s terms, is a step-by-step approach to continuously and consistently code, build, test, release, and monitor a software product through automation. 
+
+Pipelines are pre-defined jobs that help understand what needs to be accomplished and when it has to be done. Jobs are executed in parallel as much as possible to speed up and accelerate the delivery.
+
+A typical CI/CD pipeline would consist of stages where code gets pushed to the repository; the build gets triggered, build is tested and deployed to the production environment. 
+
+Building  CI/CD pipelines are completely tailor-made based on the needs and requirements and could have multiple stages and jobs, and could be complex and comprehensive.
+
+Typically building a CI/CD pipeline consists of the following phases/stages. 
+
+Code: Checked into the repository
+Build: Build is triggered and deployed in a test environment
+Test: Automated tests are executed
+Deploy: Code is deployed to stage, and production environments.
+CICD PipelineSource
+
+Also Read: CI/CD Strategies for Faster Application Releases
+
+To build effective pipelines, it is important to ensure that they have the below characteristics:
+
+Works consistently
+Speed – provide faster feedback
+Scalable – Should be able to scale as per the demands of the jobs
+Availability, reliability, fault-tolerant
+Reusability
+Now that we have a solid understanding of some of the key things let us learn how to set up CI/CD pipeline.
+
+Setting up a CI/CD Pipeline
+In this section, let us learn how to build, integrate, and execute robust CI/CD pipelines.
+
+It is important to build a test platform and framework and have the right testing tools that can easily integrate with the overall CI/CD pipeline to aid robust testing, a faster feedback loop, and drive product success.
+
+Building an effective CI/CD pipeline is not complete without the ability of the pipeline to conduct various testing like Unit tests, Integration tests, API tests, Automated functional tests, Security tests, Performance tests, Accessibility, Cross browser tests, Visual Tests, and many others. 
+
+Also Read: How to implement a CI/CD Pipeline?
+
+The first step in setting up a CI/CD pipeline is development.
+
+Development
+Developers code and push their code to a shared repository like Git. Ensuring code integration is error-free is one of the most daunting activities since many issues could arise if there are no frequent integrations. One way to address this is to frequently merge the code and validate it. The pipeline gets activated when changes are made to the repository, like code commits. The pipeline downloads the code and initiates the build process. 
+
+Build
+In this phase, the code is compiled, dependencies are sorted out, artifacts are built, and stored in a repository like Jfrog. The software packages are ready to be deployed; There could be war files, for example, files that get deployed on tomcat and Weblogic.
+
+Environments are created using infrastructure as code, containers are built that run on various pods, and pre-baked images are stored to be rolled out.
+
+Once the environment is ready, various testing activities are carried out
+
+ Testing
+In the testing phase, it’s essential to focus on a continuous, consistent, faster feedback testing loop. 
+
+Also Read: What is Continuous Testing in DevOps
+
+Testing pipelines should aim at facilitating early and continuous testing.  Unfortunately, it’s still one of the biggest challenges that companies are struggling with today.
+
+Let’s break it down to see what it takes to build a CI/CD that would help conduct testing in a very efficient manner.
+
+Test Data
+Test Infrastructure
+Test Scripts / Test Cases (automated)
+Monitoring, Test Metrics, Dashboard
+Let’s look at each of them.
+
+Test Data
+
+Test Data is one of the biggest challenges that companies have, where teams cannot carry out testing without the historical data that has been built. 
+
+Companies cannot have a fully automated CI/CD pipeline without automating data needs. Test data should be built, managed, and maintained. It is necessary to drive this culture of building and managing data as code.
+
+Managing and maintaining test data helps:
+
+Drive immutability
+Accelerates CI/CD
+Data governance and security
+Enhance scrum team productivity
+Companies need to have clear goals to manage the test data. This could include:
+
+Identifying an approach to handle the data set as a service or code which would accelerate the loading of data in any environment
+Environments could be created and torn down without dependency on the dataset.
+Teams should follow a consistent process to manage data.
+Some ways to overcome data challenges:
+
+TDM: Test Data management tools (TDM) help us with overall data management. With the right tool, you will be able to overcome your challenges with Test Data across the organization. TDM would help reduce time to market by cutting the overall time with data creation, management, environments, and testing.
+Seed data creation – Build a tool that could generate XML based on the Database schema and relations. XML files could be used to populate data on the fly. The seed data loader process could be completely automated.
+A data lake could be created and managed, which can act as plug and play to any pipelines to meet any data requirements.
+Caching solutions like Redis could be used for faster storage and data recovery with the pipelines.
+Building, and distributing data sets as containers. For example, Docker images.
+Mocking and virtualization
+Test Infrastructure
+
+Infrastructure as code is used today to manage environments but has not factored in testing requirements completely.
+
+To do so, one must:
+
+Provide the needed scalability, reliability, and availability when building a CI/CD pipeline to carry out various types of testing.
+Integrate testing framework related to automation, performance, security, and others
+Facilitate cross browser, cross OS, cross platform, testing with various combinations
+Accessibility, usability, and End to End test infrastructure should be factored in as part of the CI/CD process.
+BrowserStack allows you to perform cross browser and cross platform testing seamlessly. You can test on 3000+ combinations of OS, devices, and versions. 
+
+# create new file for my project
